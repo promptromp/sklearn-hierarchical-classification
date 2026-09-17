@@ -19,7 +19,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Install uv and set the python version
-      uses: astral-sh/setup-uv@v10.0.1
+      uses: astral-sh/setup-uv@v10.1.0
       with:
         python-version: "3.13"
         version: "latest"
@@ -61,7 +61,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Install uv and set the python version
-      uses: astral-sh/setup-uv@v10.0.1
+      uses: astral-sh/setup-uv@v10.1.0
       with:
         python-version: ${{ matrix.python-version }}
         version: "latest"
@@ -84,7 +84,7 @@ jobs:
       with:
         fetch-depth: 0  # setuptools-scm derives the version from the tag history
     - name: Install uv
-      uses: astral-sh/setup-uv@v10.0.1
+      uses: astral-sh/setup-uv@v10.1.0
       with:
         python-version: "3.13"
         version: "latest"
